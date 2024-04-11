@@ -51,6 +51,14 @@ Este é um aplicativo Full Stack de Todo List com funcionalidades de autenticaç
 
 8. Abra o navegador e acesse o aplicativo em `http://localhost:3000`.
 
+![image](https://github.com/caiovalle2/todo-list-fullstack/assets/80835499/7c97dfa0-7e30-4725-acfb-16812157621b)
+
+![image](https://github.com/caiovalle2/todo-list-fullstack/assets/80835499/cb8a9ffd-b9d6-48c2-bc79-e127cbf5a797)
+
+![image](https://github.com/caiovalle2/todo-list-fullstack/assets/80835499/fbb653e7-d89a-4f60-9460-f7c1862a5629)
+
+![image](https://github.com/caiovalle2/todo-list-fullstack/assets/80835499/721d7839-43d7-4a12-9d9a-c110bc548cde)
+
 ## Observações
 
 - Certifique-se de ter o Node.js, npm e Python instalados em sua máquina.
