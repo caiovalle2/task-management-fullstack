@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+    border-radius: 10px;
+
+  }
+  
+  /* Estilizando o fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: rgb(107,114,128); /* cor de fundo */
+  }
+  
+  /* Estilizando o controle deslizante da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff; /* cor do controle deslizante */
+    border-radius: 10px;
+  }
+  
+  /* Mudando a cor do controle deslizante quando hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* cor do controle deslizante ao passar o mouse */
+  }
+  
