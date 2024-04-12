@@ -17,9 +17,8 @@ Este é um aplicativo Full Stack de Todo List com funcionalidades de autenticaç
 - **Frontend**:
   - Framework de UI: Next.js
   - Biblioteca de gerenciamento de estado: React.js
-  - Biblioteca de arrastar e soltar: React Beautiful Dnd
   - Autenticação de usuário: Sessão do navegador (por exemplo, usando cookies)
-  - Estilização: CSS Modules ou styled-components
+  - Estilização: Tailwind
 
 - **Backend**:
   - Framework Web: Django Rest Framework
