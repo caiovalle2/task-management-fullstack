@@ -5,6 +5,7 @@ import isAuthenticated from "@/utils/Auth"
 import api from './api'
 
 export default function Login() {
+  const [msgerror, setmsgerror] = useState(null)
   const [formData, setFormData] = useState({
     username: '',
     password: ''
@@ -37,7 +38,9 @@ export default function Login() {
     api.login(formData).then(data => {
       localStorage.setItem('user', JSON.stringify(data))
       router.push('/home')
-    }).catch(e => {})
+    }).catch(e => {
+      setmsgerror(e.response.data.detail)
+    })
   };
   
   return (
@@ -48,8 +51,9 @@ export default function Login() {
             <h1 className="mb-10 text-2xl font-bold w-full">Login</h1>
             <form onSubmit={handleSubmit} className="w-full">
               <input className="border-2 border-gray-500 p-2 mb-5 w-full rounded-3xl" type="text" name="username" value={formData.username} onChange={handleChange} placeholder="Username"/>
-              <input className="border-2 border-gray-500 p-2 mb-5 w-full rounded-3xl" type="text" name="password" value={formData.password} onChange={handleChange} placeholder="Password"/>
-              <button className="bg-white p-2 mb-5 w-1/2 rounded-3xl" type="submit">Login</button>
+              <input className="border-2 border-gray-500 p-2 w-full rounded-3xl" type="password" name="password" value={formData.password} onChange={handleChange} placeholder="Password"/>
+              {msgerror && <h1 className='text-red-500'>{msgerror}</h1>}
+              <button className="bg-white p-2 my-5 w-1/2 rounded-3xl" type="submit">Login</button>
             </form>
             <div className="flex justify-center text-white">
               <h1 className="mr-1">Don't have an account?</h1>
